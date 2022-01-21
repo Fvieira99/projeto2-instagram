@@ -21,18 +21,20 @@
       <div class="logo">
         <a href="https://www.instagram.com/"><ion-icon class="icone-instagram" name="logo-instagram"></ion-icon></a>
         <hr>
-        <a href="https://www.instagram.com/"><img src="./Arquivos Úteis/logo 1.svg" alt="logo-instagram">
+        <a href="https://www.instagram.com/"><img src="./Arquivos Úteis/logo 1.svg" alt="Logo Instagram">
         </a>
       </div>
+
+      <a class="logo-mobile" href="https://www.instagram.com/"><img  src="./Arquivos Úteis/logo 1.svg" alt="Logo Instagram"></a>
 
       
       <input class="pesquisar" type="text" placeholder="Pesquisar">
     
       <div class="icones-topo">
         <ion-icon class="pointer" name="paper-plane-outline"></ion-icon>
-        <ion-icon class="pointer" name="compass-outline"></ion-icon>
-        <ion-icon class="pointer" name="heart-outline"></ion-icon>
-        <ion-icon class="pointer" name="person-outline"></ion-icon>
+        <ion-icon class="pointer icones-deletados" name="compass-outline"></ion-icon>
+        <ion-icon class="pointer icones-deletados" name="heart-outline"></ion-icon>
+        <ion-icon class="pointer icones-deletados" name="person-outline"></ion-icon>
 
       </div>
     
@@ -216,7 +218,12 @@
             </div>
           </div>
           
-          <img class="postagem-foto" src="./Arquivos Úteis/gato-telefone 1.svg" alt="">
+          <video class="postagem-video" autoplay loop muted>
+            <source src="./Arquivos Úteis/video.mp4" type=" video/mp4">
+            <source src="./Arquivos Úteis/video.ogg" type=" video/ogg">
+            Seu navegador não suporta videos
+
+          </video>
           
 
           <div class="postagem-rodape">
@@ -240,7 +247,47 @@
           </div>
           
         </div>
+
+        <div class="postagem">
+          <div class="postagem-topo">
+            <div class="postagem-perfil">
+              <a href="#"><img src="./Arquivos Úteis/meowed 1.svg" alt=""></a>
+              <a href="#"><p class="cor-preta">meowed</p></a>
+            </div>
+            <div class="opcoes">
+              <ion-icon class="pointer" name="ellipsis-horizontal"></ion-icon>
+            </div>
+          </div>
+          
+          <img class="postagem-foto" src="./Arquivos Úteis/gato-telefone 1.svg" alt="">
+          
+
+          <div class="postagem-rodape">
+            <div class="icones-rodape">
+              <div class="curtir-comentario-direct">
+                <ion-icon class="pointer" name="heart-outline"></ion-icon>
+                <ion-icon class="pointer" name="chatbubble-outline"></ion-icon>
+                <ion-icon class="pointer" name="paper-plane-outline"></ion-icon>
+              </div>
+              <ion-icon class="salvar pointer" name="bookmark-outline"></ion-icon>
+
+            </div>
+            <div class="curtidas">
+              
+              <a href="#">
+                <img src="./Arquivos Úteis/respondeai 1.svg" alt="">
+              </a>
+              
+              <p>Curtido por <a href="#"><b>respondeai</b></a> e outras <a href="#"><b>101.523 pessoas</b></a></p>
+            </div>
+            
+          </div>
+          
+        </div>
+
       </div>
+
+     
     
     </main>
   
@@ -408,8 +455,23 @@
         </div>  
     
     </aside>
+
+    <div class="barra-inferior-mobile">
+      <div class="container-barra-inferior">
+        <ion-icon class="pointer" name="home"></ion-icon>
+        <ion-icon class="pointer" name="search-outline"></ion-icon>
+        <ion-icon class="pointer" name="search-outline"></ion-icon>
+        <ion-icon class="pointer" name="heart-outline"></ion-icon>
+        <ion-icon class="pointer" name="person-outline"></ion-icon>
+      </div>
   
-  </section>
+    </div>
+  
+   </section>
+   
+   
+
+  
 
 
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

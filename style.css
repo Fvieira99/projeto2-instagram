@@ -9,9 +9,10 @@ header{
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   
 }
+
 
 body{
   font-family: 'Roboto', sans-serif;
@@ -30,10 +31,14 @@ a:visited{
   color: #262626;
 }
 
+.logo-mobile{
+  display: none;
+}
+
 
 .topo{
   
-  width:935px;
+  width: 935px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,8 +127,8 @@ a:visited{
   width: 30px;
   height: 30px;
   position: absolute;
-  left: 94.5%;
-  text-shadow: 10px 10px 10px black;
+  left: 94.6%;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
   color: rgba(255, 255, 255, 0.98);
 
 }
@@ -221,6 +226,11 @@ a:visited{
 
 .postagem-foto{
   width: 612px;
+}
+
+.postagem-video{
+  width: 612px;
+  height: 612px;
 }
 
 .postagem-rodape{
@@ -400,4 +410,126 @@ aside{
 .underline:hover{
   text-decoration: underline;
 
+}
+
+.barra-inferior-mobile{
+  display: none;
+}
+
+
+
+@media(max-width: 934px){
+    
+   header{
+     width: 100%;
+   }
+
+   .topo{
+     width: 95%;
+     justify-content: space-between;
+   }
+
+   .icones-topo{
+     gap: 20px;
+   }
+  
+    aside{
+      display: none;
+    }
+
+    .conteudo{
+      width: 614px;
+    }
+
+    
+}
+
+@media(max-width: 613px){
+  
+  
+  .logo hr{
+    display: none;
+  }
+
+  .logo img{
+     display: none;
+  }
+
+  .pesquisar{
+    display: none;
+  }
+
+  .topo{
+    display: flex;
+  }
+
+  .logo-mobile{
+    display: initial;
+  }
+
+  .icones-deletados{
+    display: none;
+  }
+
+  .conteudo{
+    flex-direction: column;
+  }
+
+  main{
+    margin-bottom: 56px;
+
+  }
+
+  .stories{
+    margin-top: 0;
+    border: 0;
+  }
+
+  .seta{
+    display: none;
+  }
+
+  .galeria{
+    margin-top: 0;
+  }
+
+  .postagem{
+    width: 100%;
+    border-right: 0 ;
+    border-left: 0;
+  }
+  
+  .postagem-foto{
+    width: 100%;
+  }
+  
+  .postagem-video{
+    width: 100%;
+  }
+
+  .barra-inferior-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    bottom:0;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB
+  }
+
+  .container-barra-inferior{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .container-barra-inferior ion-icon{
+    width: 22px;
+    height: 22px;
+    
+   
+  }
 }
